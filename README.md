@@ -1,4 +1,4 @@
-# 🪑 Sedentary Activity Tracker
+# Sedentary Activity Tracker
 
 A real-time sedentary behavior monitoring system that tracks physical activity using an Arduino with MPU6050 accelerometer and PIR motion sensor. The system classifies activity into three states (Active, Fidgeting, Sedentary) and alerts users after prolonged inactivity.
 
@@ -29,7 +29,7 @@ A real-time sedentary behavior monitoring system that tracks physical activity u
 | **20-Minute Alert** | Triggers notification after prolonged sedentary behavior |
 | **Instant Reconnection** | Redis caches last 100 readings for immediate graph population on page load |
 
-### 📊 Dashboard Features
+### Dashboard Features
 
 | Component | Description |
 |-----------|-------------|
@@ -117,7 +117,7 @@ A real-time sedentary behavior monitoring system that tracks physical activity u
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
@@ -314,7 +314,7 @@ docker-compose up -d
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 sedentary_tracker/
@@ -396,7 +396,7 @@ sedentary_tracker/
 
 ---
 
-## 🧪 Testing
+## Testing
 
 This project has a comprehensive test suite with **74 tests** covering unit tests, integration tests, and database tests.
 
@@ -459,7 +459,7 @@ sqlx migrate run
 
 ---
 
-## 🔒 Pre-commit Hook (CI/CD)
+## Pre-commit Hook (CI/CD)
 
 A Git pre-commit hook ensures code quality before every commit:
 
@@ -469,9 +469,9 @@ A Git pre-commit hook ensures code quality before every commit:
 ```
 
 **Checks performed:**
-1. ✅ **Formatting** - `cargo fmt --check`
-2. ✅ **Linting** - `cargo clippy -- -D warnings`
-3. ✅ **Tests** - `cargo test -p logic -p errors`
+1. **Formatting** - `cargo fmt --check`
+2. **Linting** - `cargo clippy -- -D warnings`
+3. **Tests** - `cargo test -p logic -p errors`
 
 If any check fails, the commit is blocked.
 
@@ -490,7 +490,7 @@ cargo fmt -- --check && cargo clippy -- -D warnings && cargo test -p logic -p er
 
 ---
 
-## 🛠️ Development Scripts
+## Development Scripts
 
 ### `scripts/init_db.sh`
 
@@ -517,7 +517,7 @@ Initializes the development database:
 
 ---
 
-## 🔍 Manual Testing
+## Manual Testing
 
 ### Test Serial Connection
 
@@ -544,18 +544,3 @@ docker exec sedentary_tracker_db psql -U postgres -d sedentary_tracker \
 ```bash
 curl http://localhost:8000/api/fhir/observation/latest
 ```
-
----
-
-## 📄 License
-
-MIT License
-
----
-
-## 🙏 Acknowledgments
-
-- **Adafruit** - MPU6050 library
-- **D3.js** - Data visualization
-- **Axum** - Rust web framework
-- **SQLx** - Async database driver
