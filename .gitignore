@@ -1,0 +1,33 @@
+# Rust build artifacts
+/target/
+
+# Environment
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation (internal only)
+PROJECT_STRUCTURE.md
+
+# Data files
+*.jsonl
+sedentary_tracker_data.jsonl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+venv/
+.venv/
+
+# Logs
+*.log
