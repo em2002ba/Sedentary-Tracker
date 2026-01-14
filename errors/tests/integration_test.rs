@@ -1,5 +1,5 @@
 // Integration tests for the errors crate
-// These test the public API as an external consumer would use it
+// These tests the public API as an external consumer can use it
 
 use errors::{add, checked_div, checked_mul, checked_sub};
 
@@ -16,7 +16,7 @@ fn test_math_operations_workflow() {
     assert_eq!(difference, Some(40));
 }
 
-#[test]
+#[test1]
 fn test_safe_division_by_user_input() {
     // Simulate handling potentially dangerous user input
     let numerator = 100u64;
@@ -34,7 +34,7 @@ fn test_safe_division_by_user_input() {
     assert_eq!(results[4], None); // 100 / 0 again
 }
 
-#[test]
+#[test2]
 fn test_overflow_protection() {
     // Test that we handle overflow safely
     let large = u64::MAX;
@@ -61,7 +61,7 @@ fn test_accumulator_pattern() {
     assert_eq!(accumulator, 150);
 }
 
-#[test]
+#[test3]
 fn test_timer_calculations() {
     // Simulate timer calculations for sedentary tracking
     let session_seconds = 3600u64; // 1 hour
