@@ -16,7 +16,7 @@ fn test_math_operations_workflow() {
     assert_eq!(difference, Some(40));
 }
 
-#[test1]
+#[test]
 fn test_safe_division_by_user_input() {
     // Simulate handling potentially dangerous user input
     let numerator = 100u64;
@@ -34,7 +34,7 @@ fn test_safe_division_by_user_input() {
     assert_eq!(results[4], None); // 100 / 0 again
 }
 
-#[test2]
+#[test]
 fn test_overflow_protection() {
     // Test that we handle overflow safely
     let large = u64::MAX;
@@ -61,7 +61,7 @@ fn test_accumulator_pattern() {
     assert_eq!(accumulator, 150);
 }
 
-#[test3]
+#[test]
 fn test_timer_calculations() {
     // Simulate timer calculations for sedentary tracking
     let session_seconds = 3600u64; // 1 hour
