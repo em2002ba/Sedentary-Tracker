@@ -76,4 +76,3 @@ fn test_timer_calculations() {
     let per_segment = checked_div(session_seconds, segments);
     assert_eq!(per_segment, Some(300)); // 5 minutes per segment
 }
-
